@@ -1,0 +1,94 @@
+.myFridge {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.fridgeLeftSide {
+  width: 50%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fridgeTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fridgeTitle p {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 20px 20px 0px 5%;
+}
+
+.fridgeSubTitle {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+  margin: 10px 5%;
+}
+
+.fridgeCategories {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fridgeRightSide {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCardCategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 130px;
+  border: solid #dbeddd 3px;
+  border-radius: 5%;
+  margin: 10px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.addCardCategory:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 760px) {
+  .myFridge {
+    flex-direction: column;
+  }
+
+  .fridgeLeftSide {
+    width: 100%;
+  }
+
+  .fridgeRightSide {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .fridgeCategories {
+    justify-content: center;
+  }
+
+  .fridgeLeftSide {
+    min-height: 70vh;
+  }
+}

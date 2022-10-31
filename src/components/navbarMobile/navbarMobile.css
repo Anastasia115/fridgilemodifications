@@ -1,0 +1,82 @@
+.NavbarMobile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 8px 20px rgba(50, 50, 50, 0.75);
+  border-radius: 50px 50px 0px 0px;
+  transition: 0.5s all ease-in-out;
+  z-index: 1;
+  background-color: white;
+
+}
+
+.NavBtnContainerMobile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  flex-direction: column;
+  cursor: pointer;
+  height: 100%;
+}
+
+.NavBtnContainerMobile p {
+  font-family: 'General Sans';
+  color: black;
+  margin: 10px 0px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.NavBtnContainerMobile a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.NavBtnContainerMobileShoppingList p {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.NavBtnsMobile {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  width: 35px;
+  height: 25px;
+}
+
+.NavBtnMobileMiddle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -1.4rem;
+
+  transition: 0.5s all ease-in-out;
+}
+
+.NavBtnMobileMiddle:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 570px) {
+  .NavbarMobile {
+    display: none;
+  }
+  .ClosedMobileNavbar {
+    display: none;
+  }
+}

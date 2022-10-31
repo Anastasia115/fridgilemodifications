@@ -1,0 +1,61 @@
+.itemListContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemToBuyContainer {
+  width: 300px;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #dbeddd;
+  background-color: #dbeddd;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+
+.notDone {
+  padding: 5px 10px;
+  width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.done {
+  padding: 5px 10px;
+  width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: line-through;
+}
+.itemName{
+  font-family: 'General Sans';
+}
+.itemInListIcons {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.itemInListIcons:hover {
+  transform: scale(1.2);
+}
+
+.itemInListIconsMain {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.itemInListIconsMain:hover {
+  transform: scale(1.1) rotate(360deg);
+}
